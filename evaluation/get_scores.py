@@ -3,7 +3,8 @@ import json
 import sys
 import openai
 import argparse
-from metrics import *
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from prompts.metrics import evaluate_prompt, ethics_evaluation
 import os
 from openai import OpenAI
 
