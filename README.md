@@ -1,5 +1,14 @@
 # CascadeRCG
 CascadeRCG: Retrieval-Augmented Generation for Enhancing Professionalism  and Knowledgeability in Online Mental Health Support
+![Evaluation Criteria](./images/Figure.png)
+## :relaxed: Generation
+```bash
+pip install -r requirements.txt
+python main.py -e <embedding_model_path> -k <know_db_path> -p <pro_db_path> -a <all_db_path> -r <reranker_model_path> -m <inference_model_type> -d <data_path> -s <save_path> --K_1 <value> --K_2 <value> --J <value> --single_turn
+```
+**Notice**: 
+Please be aware that due to copyright restrictions, the actual content of the database is
+not publicly available.
 
 ## :mag: Evaluation 
 ### Criteria:
