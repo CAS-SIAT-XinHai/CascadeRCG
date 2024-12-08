@@ -44,7 +44,6 @@ This tool evaluates data using the GPT-4 model. It supports two types of evaluat
    export OPENAI_API_KEY='your-api-key'
    export OPENAI_API_BASE='https://api.openai.com'
 
-
 #### Usage
 
 **Run the script with the required arguments:**
