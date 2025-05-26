@@ -1,5 +1,8 @@
 # CascadeRCG
 CascadeRCG: Retrieval-Augmented Generation for Enhancing Professionalism  and Knowledgeability in Online Mental Health Support
+
+[Paper Link](https://dl.acm.org/doi/10.1145/3701716.3715466)
+
 ![Evaluation Criteria](./images/Figure.png)
 ## :cherry_blossom: Vector Database
 ### Features
@@ -50,3 +53,24 @@ This tool evaluates data using the GPT-4 model. It supports two types of evaluat
 ```bash
 cd CascadeRCG/evaluation
 python get_scores.py -e /path/to/evaluation_data.json -t [ethics|rag] -r /path/to/results.json
+```
+
+```bibtex
+@inproceedings{10.1145/3701716.3715466,
+author = {Yang, Di and Zhu, Jingwei and Wu, Haihong and Tan, Minghuan and Li, Chengming and Yang, Min},
+title = {CascadeRCG: Retrieval-Augmented Generation for Enhancing Professionalism and Knowledgeability in Online Mental Health Support},
+year = {2025},
+isbn = {9798400713316},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3701716.3715466},
+doi = {10.1145/3701716.3715466},
+abstract = {Online mental health support(OMHS) plays a crucial role in promoting well-being, but the shortage of mental health professionals necessitates automated systems to address complex care needs. While large language models (LLMs) are widely adopted, they often fall short in OMHS settings due to the complexity and ambiguity of the questions posed. Additionally, providing accurate answers requires extensive knowledge, which LLMs may lack, leading to responses that often lack depth, professionalism, and critical detail. To address these limitations, we introduce a new task tailored to OMHS scenarios, focusing on enhancing the professionalism and knowledgeability of generated responses. Furthermore, we propose a comprehensive benchmark designed to systematically evaluate the quality of responses. Building on these foundations, we propose the CascadeRCG framework, an optimized approach based on Retrieval-Augmented Generation (RAG). This framework first employs a knowledge management strategy, then introduces a two-stage cross-iterative Retrieval mechanism and a Clustering-then-summarizing module, followed by the final Generation stage. Experimental results on both single-turn and multi-turn psychological dialogue datasets, compared to other RAG-based baselines across different LLMs, show significant improvements in response professionalism and knowledge depth. This enhancement in response quality provides an effective methodology and strategy for further improving OMHS systems. Our code is available at https://github.com/CAS-SIAT-XinHai/CascadeRCG.},
+booktitle = {Companion Proceedings of the ACM on Web Conference 2025},
+pages = {1465–1469},
+numpages = {5},
+keywords = {LLM, NLP, RAG, online mental health support},
+location = {Sydney NSW, Australia},
+series = {WWW '25}
+}
+```
